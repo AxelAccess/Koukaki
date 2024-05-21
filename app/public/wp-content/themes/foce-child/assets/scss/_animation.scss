@@ -1,0 +1,138 @@
+@keyframes fadeInTop {
+  0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+@keyframes fadeInBot {
+  0% {
+		opacity: 0;
+		transform: translateY(200px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+@keyframes fadeInBotTitre {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeInBotPlace {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes rotate-flower {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+@keyframes floatingCat {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.story::after{
+  animation: rotate-flower 8s linear infinite , fadeInBot 1s ease-in-out;
+}
+.story__article::after, #colophon:before, #colophon:after, #studio h2::before, #studio h2::after, .site-footer ul::after, .story__article__scroll::after, .festivalOrchid, .festivalSunFlower  {
+  animation: rotate-flower 8s linear infinite;
+}
+
+.video{
+  animation-name: fadeInTop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.story__article, #animSection, #place, #studio, #colophon {
+  display: none;
+}
+
+.simpleAnimationTitle{
+  animation-name: fadeInBotTitre;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.animFirstWord{
+  position: relative;
+  z-index: 1;
+  color:#FFF5E9!important;
+  background-color: transparent;
+  display: none;
+  animation-name: fadeInBotTitre;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.animSecondWord{
+  position: relative;
+  z-index: 1;
+  color:#FFF5E9;
+  display: none;
+  animation-name: fadeInBotTitre;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}

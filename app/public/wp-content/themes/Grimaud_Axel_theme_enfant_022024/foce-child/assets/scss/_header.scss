@@ -1,0 +1,158 @@
+//----Menu----//
+.main-navigation{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width:1440px ;
+}
+.mainTitle{
+    position: relative;
+    display: block;
+    left: 35%;
+}
+.burger{
+    max-width: 40px;
+    background-image: url(/wp-content/themes/foce-child/assets/image/burgerLigne.svg);
+    background-repeat: no-repeat;
+    margin-right: 132px;
+}
+.cross{
+    background-image: url(/wp-content/themes/foce-child/assets/image/burgerCroix.svg);
+    background-repeat: no-repeat;
+    background-position:center ;
+    margin-right: 132px;
+    max-width: 40px;    
+}
+.hide{   
+    display: none;
+}
+.display{
+    overflow: hidden;
+    background: #000;
+}
+.menu{
+    right:0px;
+    left:0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFF5E9;
+    z-index: 100;
+   position: fixed;
+    text-align: center;
+    font-size: 60px;
+    
+    line-height: 120px;
+    list-style: none;
+    gap:57px;
+}
+.footerMenu{
+    position: relative;
+    top: 35px;
+    left:0px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+//----Menu----//
+
+//----Decoration of the menu----//
+.menuLogo{
+    padding-top: 38px;
+    width: 155px;
+}
+.menu :hover{
+    text-shadow: rgba(220,133,51,0.9) 0px 0px 12px;
+    color: #000;
+}
+a:-webkit-any-link {
+    text-decoration: none !important;
+}
+
+.menuDeco{
+    z-index: 101;
+    position: fixed;
+
+    #Orchid{
+        position: relative;
+        left: -60px;
+        top: 35px;
+        animation: rotate-flower 8s linear infinite both;
+    }
+    #sunFlower{
+        position: relative;
+        right: -850px;
+        top: 80px;
+        animation: rotate-flower 8s linear infinite both;
+    }
+    #randomFlower{
+        width: 75px;
+        position: relative;
+        right: -844px;
+        top: 232px;
+        animation: rotate-flower 8s linear infinite both;
+    }
+    #orangeFlower{
+        position: relative;
+        left: -402px;
+        top: 284px;
+        animation: rotate-flower 8s linear infinite both;
+    }
+    #purpleCat{
+        position: relative;
+        left: -107px;
+        top: 58px;
+        animation: floatingCat 4s linear infinite both;
+
+    }
+    #blackCat{
+        position: relative;
+        left: 353px;
+        top: 371px;
+        animation: floatingCat 4s linear infinite both;
+    }
+    #orangeCat{
+        position: relative;
+        right: 813px;
+        top: 610px;
+        animation: floatingCat 4s linear infinite both;
+    }
+    #Hibiscus{
+        position: absolute;
+        width: 712px;
+        right: -806px;
+        top: 684px;
+        animation: rotate-flower 8s linear infinite both;
+    }
+}
+//----Decoration of the menu----//
+
+//----Banner----//
+.banner {
+    animation-name: fadeInTop;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    z-index: -1;
+    min-height: 806px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 79px;
+    img {
+        animation-name: fadeInBot;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        margin-top: -100px;
+        width: 720px;
+        position: absolute;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;   
+    }
+    #logo{
+        margin-top: -404px;
+        width: 720px;
+        position: absolute;
+        animation: floatingCat 7s linear infinite both;
+    }
+  }
+//----Banner----//

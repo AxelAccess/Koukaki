@@ -1,0 +1,140 @@
+@media screen and (min-width: 1px) and (max-width: 800px){
+    //----Menu----//
+    .main-navigation {
+        height:80px;
+        font-size: smaller;
+    }
+    .mainTitle{
+        left:10%;
+        max-height:80px;
+    }
+    #burgerQueriesAdapt{
+        position: fixed;
+        right: -120px;
+        top: 32px;
+    }
+    .menuDeco{
+        display: none;
+    }
+    .menu{
+        height: 810px;
+        line-height: 90px;
+        font-size: xx-large;
+    }
+    //----Menu----//
+
+    //----Banner----//
+    .banner {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+            
+        #videoQueryAdapt{
+            display: none;
+        }
+        
+        #logo{
+            margin-top: -248px;
+            width: 499px;
+        }
+    }
+    //----Banner----//
+
+    //----Story bloc----//
+    .story__article{
+        display: block;
+    }
+    .story::before, .story::after, .smallCloud, .bigCloud  {
+        display: none;
+    }
+    .titre {
+        margin-top: -154px!important;
+    }
+    //----Story bloc----//
+
+    //----Characters bloc----//
+    #character{
+        padding-top:0px!important;
+        margin-top: -20px!important;
+        justify-content: center!important;
+    }
+    .characterTitleBackground{
+        margin-left: 16px;
+        margin-top: -47px;
+    }
+    .swiper{
+           width: 500px!important;        
+    }
+    .nom {
+        justify-content: right;
+    }
+    //----Characters bloc----//
+
+    //----Place bloc----//
+    #place{
+        display: flex!important;
+        margin-top: -200px;
+        animation: none;
+    }
+    .place{
+        margin-left: 57px;
+    }
+    .placeTitleBackground {
+        margin-bottom: 220px!important;
+        margin-left: 50px!important;
+    }
+    //----Place bloc----//
+
+    //----Studio bloc----//
+    .StudioTitleBackground{
+        width: 440px!important;
+        top: 13px!important;
+        left: 28px!important;
+    }
+    #studio{
+        display: block;
+    }
+    #studio h2 {
+        padding-left: 94px;
+    }
+    //----Studio bloc----//
+
+    //----Festival bloc----//
+    .festival  {
+        padding-top: 0px!important;
+        padding-bottom: 50px!important;
+        h3{
+            position: absolute;
+            font-size: x-large;
+            overflow-wrap: normal;
+            padding-left: 18px !important;
+            width: 450px!important;
+            margin-top: 57px!important;
+        }
+        .oscars{
+            margin-top: 244px!important;
+            width: 282px !important;
+            height: 103px !important;
+            margin-left: auto;
+            margin-right: auto;
+        }      
+    }
+    .festivalOrchid, .festivalSunFlower{
+        display: none;
+    }
+    .festival_background{
+        height: 266px!important;
+        left: 10px!important;
+    }
+    //----Festival bloc----//
+
+    #colophon{
+        display: block;
+    }
+    .site-footer ul::after{
+        display: none;
+    }
+    .site-footer{
+        padding-top: 50px;
+    }
+}

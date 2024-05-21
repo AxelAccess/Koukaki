@@ -1,0 +1,181 @@
+@import "scss/animation";
+@import "scss/header";
+@import "scss/mediaQueries";
+h2{
+    background-image: none;
+    background-color: transparent;
+}
+//----Story----//
+.story h2::after {
+    content:none;
+}
+.story h2::before {
+    content:none;
+}
+.story::before {
+    animation-name: fadeInBot;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    content: url(/wp-content/themes/foce-child/assets/image/sunflower_leaves.png);
+    position: absolute;
+    left: 0;
+    top: 1.8em;
+}
+
+.story::after {
+    content: url(/wp-content/themes/foce-child/assets/image/Sunflower.png);
+    position: absolute;
+    left: 2.8em;
+    top: 20em;
+}
+.background{
+    width: 375px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.titre{
+    display: none;
+    background-color: transparent;
+    background-image:none;
+    margin-top: -180px;
+}
+//----Story----//
+
+//----Character----//
+#character{
+    z-index: 1;
+    color:#FFF5E9;
+    display: none;
+    animation-name: fadeInBotPlace;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    text-align: left;
+    margin-top: 100px;
+    padding-top: 55px;
+    right: 10px;
+}
+.characterTitleBackground{
+    position: absolute;
+    width: 500px;
+}
+.swiper {
+    width: 1440px;
+    height: 500px;
+}
+.nom{
+    display: flex;
+    justify-content: center;
+    padding-right: 80px;
+}
+//----Character----//
+
+//----Place----//
+.place{
+    position: relative;
+    z-index: 1;
+    color:#FFF5E9;
+    animation-name: fadeInBotPlace;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+.story #place{
+    display: none;
+}
+.story #place {
+    background-image: url(/wp-content/themes/foce-child/assets/image/Studio_Koukaki-image_place.png);
+    width: 100%;
+    min-height: 699px;
+    background-size: cover;
+}
+.placeTitleBackground{
+    position:absolute;
+    margin-bottom: 120px;
+    margin-left: 15px;
+}
+.story #place h3 {
+    background-image: none;
+}
+.bigCloud{
+    position: absolute;
+    padding-bottom: 450px;
+    right: 33px;
+    filter: blur(16px);
+    
+}
+.smallCloud{
+    position: absolute;
+    padding-bottom: 150px;
+    right: 500px;
+    filter: blur(16px);   
+}
+//----Place----//
+
+
+//----Studio----//
+.StudioTitleBackground{
+    position: absolute;
+    width: 650px;
+    bottom: 230px;
+    left:400px;
+}
+#studio h2{
+    background-image: none;
+    background-color: transparent;
+}
+//----Studio----//
+
+//----Festival----//
+.festival{
+    display: none;
+    padding-top: 91px;
+    padding-bottom: 130px;
+    padding-left: 50px;
+}
+
+.festivalOrchid{
+    position: absolute;
+    margin-left: 1281px;
+    margin-top: -62px;
+}
+.festivalSunFlower{
+    position: absolute;
+    margin-left: 52px;
+}
+
+.festival h3{ 
+    z-index: 1; 
+    color:#FFF5E9!important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    padding-left : 166px;
+    margin-top: 105px;
+    width: 918px;
+}
+.festival .oscars{
+    width: 400px;
+    height: 180px;    
+    margin-top: 155px;
+
+}
+.festival_background{
+    position: absolute;
+    width: 939px;
+    height: 472px;
+    left: 230px;
+}
+//----Festival----//
+
+
+.site-footer{
+    display: block;
+}
+.site-footer::after {
+    position: absolute;
+    bottom: 50.8em;
+    z-index: 1;
+}
+.site-footer::before {
+    content:none;
+}

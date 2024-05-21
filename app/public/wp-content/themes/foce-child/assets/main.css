@@ -1,0 +1,590 @@
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInBot {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInBotTitre {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInBotPlace {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rotate-flower {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes floatingCat {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.story::after {
+  animation: rotate-flower 8s linear infinite, fadeInBot 1s ease-in-out;
+}
+
+.story__article::after, #colophon:before, #colophon:after, #studio h2::before, #studio h2::after, .site-footer ul::after, .story__article__scroll::after, .festivalOrchid, .festivalSunFlower {
+  animation: rotate-flower 8s linear infinite;
+}
+
+.video {
+  animation-name: fadeInTop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.story__article, #animSection, #place, #studio, #colophon {
+  display: none;
+}
+
+.simpleAnimationTitle {
+  animation-name: fadeInBotTitre;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.animFirstWord {
+  position: relative;
+  z-index: 1;
+  color: #FFF5E9 !important;
+  background-color: transparent;
+  display: none;
+  animation-name: fadeInBotTitre;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.animSecondWord {
+  position: relative;
+  z-index: 1;
+  color: #FFF5E9;
+  display: none;
+  animation-name: fadeInBotTitre;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.main-navigation {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+}
+
+.mainTitle {
+  position: relative;
+  display: block;
+  left: 35%;
+}
+
+.burger {
+  max-width: 40px;
+  background-image: url(/wp-content/themes/foce-child/assets/image/burgerLigne.svg);
+  background-repeat: no-repeat;
+  margin-right: 132px;
+}
+
+.cross {
+  background-image: url(/wp-content/themes/foce-child/assets/image/burgerCroix.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 132px;
+  max-width: 40px;
+}
+
+.hide {
+  display: none;
+}
+
+.display {
+  overflow: hidden;
+  background: #000;
+}
+
+.menu {
+  right: 0px;
+  left: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #FFF5E9;
+  z-index: 100;
+  position: fixed;
+  text-align: center;
+  font-size: 60px;
+  line-height: 120px;
+  list-style: none;
+  gap: 57px;
+}
+
+.footerMenu {
+  position: relative;
+  top: 35px;
+  left: 0px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.menuLogo {
+  padding-top: 38px;
+  width: 155px;
+}
+
+.menu :hover {
+  text-shadow: rgba(220, 133, 51, 0.9) 0px 0px 12px;
+  color: #000;
+}
+
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
+.menuDeco {
+  z-index: 101;
+  position: fixed;
+}
+.menuDeco #Orchid {
+  position: relative;
+  left: -60px;
+  top: 35px;
+  animation: rotate-flower 8s linear infinite both;
+}
+.menuDeco #sunFlower {
+  position: relative;
+  right: -850px;
+  top: 80px;
+  animation: rotate-flower 8s linear infinite both;
+}
+.menuDeco #randomFlower {
+  width: 75px;
+  position: relative;
+  right: -844px;
+  top: 232px;
+  animation: rotate-flower 8s linear infinite both;
+}
+.menuDeco #orangeFlower {
+  position: relative;
+  left: -402px;
+  top: 284px;
+  animation: rotate-flower 8s linear infinite both;
+}
+.menuDeco #purpleCat {
+  position: relative;
+  left: -107px;
+  top: 58px;
+  animation: floatingCat 4s linear infinite both;
+}
+.menuDeco #blackCat {
+  position: relative;
+  left: 353px;
+  top: 371px;
+  animation: floatingCat 4s linear infinite both;
+}
+.menuDeco #orangeCat {
+  position: relative;
+  right: 813px;
+  top: 610px;
+  animation: floatingCat 4s linear infinite both;
+}
+.menuDeco #Hibiscus {
+  position: absolute;
+  width: 712px;
+  right: -806px;
+  top: 684px;
+  animation: rotate-flower 8s linear infinite both;
+}
+
+.banner {
+  animation-name: fadeInTop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  z-index: -1;
+  min-height: 806px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 79px;
+}
+.banner img {
+  animation-name: fadeInBot;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  margin-top: -100px;
+  width: 720px;
+  position: absolute;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.banner #logo {
+  margin-top: -404px;
+  width: 720px;
+  position: absolute;
+  animation: floatingCat 7s linear infinite both;
+}
+
+@media screen and (min-width: 1px) and (max-width: 800px) {
+  .main-navigation {
+    height: 80px;
+    font-size: smaller;
+  }
+  .mainTitle {
+    left: 10%;
+    max-height: 80px;
+  }
+  #burgerQueriesAdapt {
+    position: fixed;
+    right: -120px;
+    top: 32px;
+  }
+  .menuDeco {
+    display: none;
+  }
+  .menu {
+    height: 810px;
+    line-height: 90px;
+    font-size: xx-large;
+  }
+  .banner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner #videoQueryAdapt {
+    display: none;
+  }
+  .banner #logo {
+    margin-top: -248px;
+    width: 499px;
+  }
+  .story__article {
+    display: block;
+  }
+  .story::before, .story::after, .smallCloud, .bigCloud {
+    display: none;
+  }
+  .titre {
+    margin-top: -154px !important;
+  }
+  #character {
+    padding-top: 0px !important;
+    margin-top: -20px !important;
+    justify-content: center !important;
+  }
+  .characterTitleBackground {
+    margin-left: 16px;
+    margin-top: -47px;
+  }
+  .swiper {
+    width: 500px !important;
+  }
+  .nom {
+    justify-content: right;
+  }
+  #place {
+    display: flex !important;
+    margin-top: -200px;
+    animation: none;
+  }
+  .place {
+    margin-left: 57px;
+  }
+  .placeTitleBackground {
+    margin-bottom: 220px !important;
+    margin-left: 50px !important;
+  }
+  .StudioTitleBackground {
+    width: 440px !important;
+    top: 13px !important;
+    left: 28px !important;
+  }
+  #studio {
+    display: block;
+  }
+  #studio h2 {
+    padding-left: 94px;
+  }
+  .festival {
+    padding-top: 0px !important;
+    padding-bottom: 50px !important;
+  }
+  .festival h3 {
+    position: absolute;
+    font-size: x-large;
+    overflow-wrap: normal;
+    padding-left: 18px !important;
+    width: 450px !important;
+    margin-top: 57px !important;
+  }
+  .festival .oscars {
+    margin-top: 244px !important;
+    width: 282px !important;
+    height: 103px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .festivalOrchid, .festivalSunFlower {
+    display: none;
+  }
+  .festival_background {
+    height: 266px !important;
+    left: 10px !important;
+  }
+  #colophon {
+    display: block;
+  }
+  .site-footer ul::after {
+    display: none;
+  }
+  .site-footer {
+    padding-top: 50px;
+  }
+}
+h2 {
+  background-image: none;
+  background-color: transparent;
+}
+
+.story h2::after {
+  content: none;
+}
+
+.story h2::before {
+  content: none;
+}
+
+.story::before {
+  animation-name: fadeInBot;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  content: url(/wp-content/themes/foce-child/assets/image/sunflower_leaves.png);
+  position: absolute;
+  left: 0;
+  top: 1.8em;
+}
+
+.story::after {
+  content: url(/wp-content/themes/foce-child/assets/image/Sunflower.png);
+  position: absolute;
+  left: 2.8em;
+  top: 20em;
+}
+
+.background {
+  width: 375px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.titre {
+  display: none;
+  background-color: transparent;
+  background-image: none;
+  margin-top: -180px;
+}
+
+#character {
+  z-index: 1;
+  color: #FFF5E9;
+  display: none;
+  animation-name: fadeInBotPlace;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  position: relative;
+  text-align: left;
+  margin-top: 100px;
+  padding-top: 55px;
+  right: 10px;
+}
+
+.characterTitleBackground {
+  position: absolute;
+  width: 500px;
+}
+
+.swiper {
+  width: 1440px;
+  height: 500px;
+}
+
+.nom {
+  display: flex;
+  justify-content: center;
+  padding-right: 80px;
+}
+
+.place {
+  position: relative;
+  z-index: 1;
+  color: #FFF5E9;
+  animation-name: fadeInBotPlace;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.story #place {
+  display: none;
+}
+
+.story #place {
+  background-image: url(/wp-content/themes/foce-child/assets/image/Studio_Koukaki-image_place.png);
+  width: 100%;
+  min-height: 699px;
+  background-size: cover;
+}
+
+.placeTitleBackground {
+  position: absolute;
+  margin-bottom: 120px;
+  margin-left: 15px;
+}
+
+.story #place h3 {
+  background-image: none;
+}
+
+.bigCloud {
+  position: absolute;
+  padding-bottom: 450px;
+  right: 33px;
+  filter: blur(16px);
+}
+
+.smallCloud {
+  position: absolute;
+  padding-bottom: 150px;
+  right: 500px;
+  filter: blur(16px);
+}
+
+.StudioTitleBackground {
+  position: absolute;
+  width: 650px;
+  bottom: 230px;
+  left: 400px;
+}
+
+#studio h2 {
+  background-image: none;
+  background-color: transparent;
+}
+
+.festival {
+  display: none;
+  padding-top: 91px;
+  padding-bottom: 130px;
+  padding-left: 50px;
+}
+
+.festivalOrchid {
+  position: absolute;
+  margin-left: 1281px;
+  margin-top: -62px;
+}
+
+.festivalSunFlower {
+  position: absolute;
+  margin-left: 52px;
+}
+
+.festival h3 {
+  z-index: 1;
+  color: #FFF5E9 !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  padding-left: 166px;
+  margin-top: 105px;
+  width: 918px;
+}
+
+.festival .oscars {
+  width: 400px;
+  height: 180px;
+  margin-top: 155px;
+}
+
+.festival_background {
+  position: absolute;
+  width: 939px;
+  height: 472px;
+  left: 230px;
+}
+
+.site-footer {
+  display: block;
+}
+
+.site-footer::after {
+  position: absolute;
+  bottom: 50.8em;
+  z-index: 1;
+}
+
+.site-footer::before {
+  content: none;
+}
